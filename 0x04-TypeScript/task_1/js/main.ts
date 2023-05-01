@@ -42,3 +42,5 @@ const StudentClass: constructorInterface = class StudentClass
         return this.firstName;
     }
 };
+
+
