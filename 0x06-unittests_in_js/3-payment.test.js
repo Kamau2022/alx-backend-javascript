@@ -5,7 +5,7 @@ describe("SUM", () => {
   it("spy Utils.calculateNumber", () => {
    const spy = sinon.spy(Utils);
    sendPaymentRequestToApi(100, 20);
-   expect(spy.calculateNumber.calledWith('SUM', 100, 20));
+   expect(spy.calculateNumber.calledWith('SUM', 100, 20)).to.be.true;
    sinon.restore();
   });
 });
