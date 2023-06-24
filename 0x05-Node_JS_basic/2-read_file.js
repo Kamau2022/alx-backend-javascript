@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-function countStudents() {
+function countStudents(path) {
   try {
     // Importing fs module to read the file
-    const data = fs.readFileSync('database.csv', 'utf8'); // using 'utf8' encoding
+    const data = fs.readFileSync(path, 'utf8'); // using 'utf8' encoding
 
     // splitting the CSV by row as "\n" represents new row
     const rows = data.split('\n');
